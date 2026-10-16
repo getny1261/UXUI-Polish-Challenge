@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Web Design Club</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles 1.css">
 </head>
 <body>
 
   <header>
-    <div class="logo">Web Design Club</div>
+    <div class="logo">Web Design Club
+      <img src="WWW-Icon.svg" alt="My Vector Logo" width="50" />
+    </div>
     <nav>
       <a href="#about">About</a>
       <a href="#meetings">Meetings</a>
@@ -28,17 +30,20 @@
       <p>We meet every week and work on websites, apps, and design projects. All skill levels are welcome — beginners are encouraged to stop by anytime, no experience necessary.</p>
     </div>
     <div class="about-image">
-      <div class="image-placeholder">photo placeholder</div>
+      <div class="image-placeholder"><img src="istockphoto-1096969570-612x612.jpg" width="200px" height="200px"/></div>
     </div>
   </section>
 
   <section id="meetings" class="meetings">
     <h2>Meeting Info</h2>
-    <ul>
+    <ul id="pend">
       <li>Thursdays</li>
       <li>Room 204</li>
       <li>3:15 PM</li>
     </ul>
+    <div>
+    <button id="rsvpBtn" onclick="handleRSVP()">RSVP for Next Meeting</button>
+    <div>
   </section>
 
   <section class="testimonials">
@@ -64,6 +69,6 @@
   <footer>
     <p>&copy; Web Design Club</p>
   </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
